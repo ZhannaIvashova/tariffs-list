@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  border: 1px solid red;
+}
+
+.card__type {
+  padding: 5px 10px;
+}
+
+.card__price {
+  padding: 5px 30px;
+}
+
+.card__speed {
+  padding: 5px 10px;
+}
+
+.card__info {
+  padding: 5px 10px;
+}
