@@ -1,9 +1,0 @@
-main {
-  max-width: 860px;
-  margin: 50px auto;
-  /*padding: 30px 10px;*/
-  display: flex;
-  justify-content: center;
-  gap: 2px;
-  background-color: rgb(247, 249, 249);
-}

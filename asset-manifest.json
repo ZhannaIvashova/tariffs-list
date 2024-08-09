@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tariffs-list/static/css/main.ec7b4b7a.css",
+    "main.js": "/tariffs-list/static/js/main.6d6feb61.js",
+    "static/js/453.2aa1f6e8.chunk.js": "/tariffs-list/static/js/453.2aa1f6e8.chunk.js",
+    "index.html": "/tariffs-list/index.html",
+    "main.ec7b4b7a.css.map": "/tariffs-list/static/css/main.ec7b4b7a.css.map",
+    "main.6d6feb61.js.map": "/tariffs-list/static/js/main.6d6feb61.js.map",
+    "453.2aa1f6e8.chunk.js.map": "/tariffs-list/static/js/453.2aa1f6e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec7b4b7a.css",
+    "static/js/main.6d6feb61.js"
+  ]
+}
