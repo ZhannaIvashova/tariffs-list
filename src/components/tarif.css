@@ -1,35 +1,45 @@
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 200px;
-  border: 1px solid red;
+  width: 200px;
+  margin: 30px 0;
+
+}
+
+.card__active {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card > div {
+  width: 100%;
+  text-align: center;
 }
 
 .card__type {
-  width: 100%;
   padding: 8px 0;
-  text-align: center;
   font-size: 18px;
   color: white;
   border-bottom: 2px solid white;
 }
 
+.card__type-active {
+  padding: 20px 0;
+  margin-top: -10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .card__price {
-  width: 100%;
   padding: 40px 0;
-  text-align: center;
   font-size: 24px;
   color: white;
 }
 
 .card__speed {
-  width: 100%;
   padding: 10px 0;
-  text-align: center;
+  background-color: rgb(246, 245, 245);
 }
 
 .card__info {
-  width: 100%;
   padding: 5px 0;
-  text-align: center;
+  background-color: rgb(230, 234, 234);
 }
