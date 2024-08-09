@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  border: 1px solid red;
+}
+
+.card__type {
+  width: 100%;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.card__price {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+.card__speed {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.card__info {
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+}
