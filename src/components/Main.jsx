@@ -1,42 +1,25 @@
-import './main.css';
 import React from "react";
-import Tarif from './Tarif';
+import { useState } from 'react';
+
+import Tariff from './Tariff';
+import TARIFF_TYPES from '../constants';
+
+import './main.css';
+
 
 function Main() {
 
-  const data = [
-    {
-      type: "Безлимитный 300",
-      price: "300 руб/мес",
-      speed: "до 10 Мбит/сек",
-      info: "Объем включенного трафика не ограничен",
-    },
-    {
-      type: "Безлимитный 450",
-      price: "450 руб/мес",
-      speed: "до 50 Мбит/сек",
-      info: "Объем включенного трафика не ограничен",
-    },
-    {
-      type: "Безлимитный 550",
-      price: "550 руб/мес",
-      speed: "до 100 Мбит/сек",
-      info: "Объем включенного трафика не ограничен",
-    },
-    {
-      type: "Безлимитный 1000",
-      price: "1000 руб/мес",
-      speed: "до 200 Мбит/сек",
-      info: "Объем включенного трафика не ограничен",
-    }
-  ];
+  const [isActive, setIsActive] = useState(null)
+  const handleCheckState = (id) => setIsActive(id)
 
   return (
     <main className="main">
-      {data.map((tarif, index) =>
-        <Tarif 
-        tarif={tarif}
-        isActive={tarif.type === 'Безлимитный 550'}
+      {TARIFF_TYPES.map((tariff, index) =>
+        <Tariff
+        key={index}
+        tariff={tariff}
+        onClick={() => handleCheckState(tariff.id)}
+        isActive={isActive === tariff.id}
         />
       )}
     </main>  

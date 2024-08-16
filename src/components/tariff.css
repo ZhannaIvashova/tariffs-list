@@ -3,7 +3,10 @@
   flex-direction: column;
   width: 200px;
   margin: 30px 0;
+}
 
+.card:hover {
+  cursor: pointer;
 }
 
 .card__active {
@@ -43,3 +46,36 @@
   padding: 5px 0;
   background-color: rgb(230, 234, 234);
 }
+
+.color-type300 {
+  background-color: #00BFFF;
+}
+
+.color-price300 {
+  background-color: #87CEFA;
+}
+
+.color-type450 {
+  background-color: #48D1CC;
+}
+
+.color-price450 {
+  background-color: #40E0D0;
+}
+
+.color-type550 {
+  background-color: #FF6347;
+}
+
+.color-price550 {
+  background-color: #FF7F50;
+}
+
+.color-type1000 {
+  background-color: #000000;
+}
+
+.color-price1000 {
+  background-color: #3c3c3c;
+}
+
