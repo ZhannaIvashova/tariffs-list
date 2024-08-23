@@ -9,17 +9,17 @@ import './main.css';
 
 function Main() {
 
-  const [isActive, setIsActive] = useState(null)
-  const handleCheckState = (id) => setIsActive(id)
+  const [activeId, setActiveId] = useState(3)
+  const handleCheckState = (id) => setActiveId(id)
 
   return (
     <main className="main">
       {TARIFF_TYPES.map((tariff, index) =>
         <Tariff
         key={index}
-        tariff={tariff}
+        {...tariff}
         onClick={() => handleCheckState(tariff.id)}
-        isActive={isActive === tariff.id}
+        isActive={activeId === tariff.id}
         />
       )}
     </main>  
